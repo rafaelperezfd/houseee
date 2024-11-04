@@ -17,5 +17,17 @@ export default {
            
         },
     },
+
+        theme: {
+          extend: {
+            backgroundImage: {
+              'login': "url('/image/login.png')",
+            },
+          },
+        },
+      
+      
     plugins: [],
+
+    
 };
