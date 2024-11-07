@@ -36,50 +36,36 @@
   
     <main class="items-center justify-center text-center mb-12 flex-col">
     <div>
-            <img src="{{ asset('image/tela promocional.png') }}" alt="">
-        </div> 
+        <video src="{{ asset('video/videotelaincial.MOV') }}" autoplay loop muted  class="w-full h-auto">
+            
+        </video>
+    </div>
+
         <h4 class="mt-8 mb-4 text-xl font-semibold">Novidades disponíveis</h4>
       
 <div class="flex  justify-between mb-8 gap-4"> 
-        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
-            <img class="object-cover w-full h-48" src="{{ asset('image/puma 180 1.png') }}" alt="Puma 180 Preto">
+        <div class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white md:w-auto">
+            <img class="object-cover w-full md:w-auto h-48 md:h-20" src="{{ asset('image/puma 180 1.png') }}" alt="Puma 180 Preto">
             <div class="p-4 text-center">
                 <h3 class="text-lg font-semibold text-gray-800">Puma 180</h3>
                 <p class="mt-1 text-gray-600">Cor: Preto</p>
             </div>
         </div>
-
-        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
-            <img class="object-cover w-full h-48" src="{{ asset('image/corteiz 1.png') }}" alt="Asics GEL-NYC Ivory Clay Grey">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-gray-800">Asics GEL-NYC</h3>
-                <p class="mt-1 text-gray-600">Cor: Ivory Clay Grey</p>
-            </div>
-        </div>
-
-        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
-            <img class="object-cover w-full h-48" src="{{ asset('image/j4 verde 1.png') }}" alt="Air Max 95 SP Aegean Storm">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-gray-800">Air Max 95 SP</h3>
-                <p class="mt-1 text-gray-600">Cor: Aegean Storm</p>
-            </div>
-        </div>
-
-        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
-            <img class="object-cover w-full h-48" src="{{ asset('image/strange love 1.png') }}" alt="Air Jordan 4 RM Fence Green">
-            <div class="p-4 text-center">
-                <h3 class="text-lg font-semibold text-gray-800">Air Jordan 4 RM</h3>
-                <p class="mt-1 text-gray-600">Cor: Fence Green</p>
-            </div>
-        </div>
-
-        <div class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
-            <img class="object-cover w-full h-48" src="{{ asset('image/asics 1.png') }}" alt="Nike Dunk Low Strange Love">
+        <div class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white md:w-auto">
+            <img class="object-cover w-full md:w-auto h-48 md:h-20" src="{{ asset('image/strange love 1.png') }}" alt="Puma 180 Preto">
             <div class="p-4 text-center">
                 <h3 class="text-lg font-semibold text-gray-800">Nike Dunk Low</h3>
                 <p class="mt-1 text-gray-600">Cor: Strange Love</p>
             </div>
         </div>
+        <div class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white md:w-auto">
+            <img class="object-cover w-full md:w-auto h-48 md:h-20" src="{{ asset('image/j4 verde 1.png') }}" alt="Puma 180 Preto">
+            <div class="p-4 text-center">
+                <h3 class="text-lg font-semibold text-gray-800">Air Jordan 4 RM</h3>
+                <p class="mt-1 text-gray-600">Cor: Fence Green</p>
+            </div>
+        </div>
+       
 </div>
 
         <h4 class="mt-8 mb-4 text-xl font-semibold">Ver mais <span><i class="cursor-pointer fa-solid fa-chevron-down"></i></span></h4> <!-- Adicionei margens para o título -->
