@@ -1,3 +1,4 @@
+<x-app-layout></x-app-layout>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,9 +13,11 @@
 <body>
 <header class="bg-white shadow-md p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Ícone de três barras para abrir o menu lateral -->
-            <div class="cursor-pointer md:hidden" onclick="toggleMenu()">
-                <i class="fa-solid fa-bars text-xl"></i>
+            <!--três barras para abrir o menu lateral -->
+            <div class="flex flex-col md:hidden gap-0.5">
+                <div id="bar1" class="w-6 h-1 bg-gray-800 rounded-md"></div>
+                <div id="bar2" class="w-6 h-1 bg-gray-800 rounded-md"></div>
+                <div id="bar3" class="w-6 h-1 bg-gray-800 rounded-md"></div> 
             </div>    
 
             <!-- Navegação para desktop escondida em mobile -->
@@ -140,10 +143,10 @@
     </div>
 </div>  
 </footer>
-
-
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 <script>
   var splide = new Splide('.splide', {
     type: 'loop',
