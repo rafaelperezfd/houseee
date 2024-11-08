@@ -13,14 +13,11 @@
 <body>
 <header class="bg-white shadow-md p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <!--três barras para abrir o menu lateral -->
-            <div class="flex flex-col md:hidden gap-0.5">
-                <div id="bar1" class="w-6 h-1 bg-gray-800 rounded-md"></div>
-                <div id="bar2" class="w-6 h-1 bg-gray-800 rounded-md"></div>
-                <div id="bar3" class="w-6 h-1 bg-gray-800 rounded-md"></div> 
+           
+            <div class="cursor-pointer md:hidden" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars text-xl"></i>
             </div>    
 
-            <!-- Navegação para desktop escondida em mobile -->
             <nav class="hidden md:flex space-x-4">
                 <a href="">Home</a>
                 <a href="">Coleções</a>
@@ -28,7 +25,7 @@
                 <a href="">Atendimentos</a>
             </nav>
 
-            <!-- Ícones de pesquisa, carrinho e usuário -->
+            
             <div class="flex space-x-3">
                 <i class="fa-solid fa-magnifying-glass text-lg"></i>
                 <i class="fa-solid fa-cart-shopping text-lg"></i>
@@ -40,51 +37,38 @@
   
     <main class="items-center justify-center text-center mb-12 flex-col">
     <div>
-            <img src="{{ asset('image/tela promocional.png') }}" alt="">
-        </div> <!-- Aumentei o mb de 6 para 12 -->
-        <h4 class="mt-8 mb-4 text-xl font-semibold">Novidades disponíveis</h4> <!-- Adicionei margens para o título -->
+        <video src="{{ asset('video/videotelaincial.MOV') }}" autoplay loop muted  class="w-full h-auto">
+            
+        </video>
+    </div>
 
-        <div class="flex justify-between mb-8"> <!-- Adicionei margens para separar produtos -->
-            <div class="max-w-xs rounded-lg overflow-hidden">
-                <img class="object-cover" src="{{ asset('image/puma 180 1.png') }}" alt="Imagem do Produto">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Puma 180</h3>
-                    <p class="mt-2 text-gray-600">Preto</p>
-                </div>
-            </div>
-
-            <div class="max-w-xs rounded-lg overflow-hidden">
-                <img class="object-cover" src="{{ asset('image/corteiz 1.png') }}" alt="Imagem do Produto">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Asics GEL-NYC</h3>
-                    <p class="mt-2 text-gray-600">Ivory Clay Grey</p>
-                </div>
-            </div>
-
-            <div class="max-w-xs rounded-lg overflow-hidden">
-                <img class="object-cover" src="{{ asset('image/j4 verde 1.png') }}" alt="Imagem do Produto">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Air Max 95 SP</h3>
-                    <p class="mt-2 text-gray-600">Aegean Storm</p>
-                </div>
-            </div>
-
-            <div class="max-w-xs rounded-lg overflow-hidden">
-                <img class="object-cover" src="{{ asset('image/strange love 1.png') }}" alt="Imagem do Produto">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Air Jordan 4 RM</h3>
-                    <p class="mt-2 text-gray-600">Fence Green</p>
-                </div>
-            </div>
-
-            <div class="max-w-xs rounded-lg overflow-hidden">
-                <img class="object-cover" src="{{ asset('image/asics 1.png') }}" alt="Imagem do Produto">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Nike Dunk Low</h3>
-                    <p class="mt-2 text-gray-600">Strange Love</p>
-                </div>
+        <h4 class="mt-8 mb-4 text-xl font-semibold">Novidades disponíveis</h4>
+      
+<div class="flex  justify-between mb-8 gap-4"> 
+        <div class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white md:w-auto">
+            <img class="object-cover w-full md:w-auto h-48 md:h-20" src="{{ asset('image/puma 180 1.png') }}" alt="Puma 180 Preto">
+            <div class="p-4 text-center">
+                <h3 class="text-lg font-semibold text-gray-800">Puma 180</h3>
+                <p class="mt-1 text-gray-600">Cor: Preto</p>
             </div>
         </div>
+        <div class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white md:w-auto">
+            <img class="object-cover w-full md:w-auto h-48 md:h-20" src="{{ asset('image/strange love 1.png') }}" alt="Puma 180 Preto">
+            <div class="p-4 text-center">
+                <h3 class="text-lg font-semibold text-gray-800">Nike Dunk Low</h3>
+                <p class="mt-1 text-gray-600">Cor: Strange Love</p>
+            </div>
+        </div>
+        <div class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white md:w-auto">
+            <img class="object-cover w-full md:w-auto h-48 md:h-20" src="{{ asset('image/j4 verde 1.png') }}" alt="Puma 180 Preto">
+            <div class="p-4 text-center">
+                <h3 class="text-lg font-semibold text-gray-800">Air Jordan 4 RM</h3>
+                <p class="mt-1 text-gray-600">Cor: Fence Green</p>
+            </div>
+        </div>
+       
+</div>
+
         <h4 class="mt-8 mb-4 text-xl font-semibold">Ver mais <span><i class="cursor-pointer fa-solid fa-chevron-down"></i></span></h4> <!-- Adicionei margens para o título -->
         <div class="splide ">
             <div class="splide__track">
