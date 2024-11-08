@@ -158,6 +158,32 @@
                 </div>
             </div>
 
+
+            <div class="w-1/2 bg-gray-900  ">
+                <div class="max-w-screen-lg mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-white text-center mb-6">Siga nossas novidades nas redes sociais</h2>
+
+                    <div class="flex  justify-center gap-6">
+                        <!-- Publicação do Instagram -->
+                         
+                            <model-viewer src="{{asset('3d/air_jordan_1.glb')}}" alt="Tênis 3D"
+                                auto-rotate camera-controls class="h-screen">
+                            </model-viewer>
+                            <blockquote class="instagram-media w-full md:w-1/3" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DBrTHiHRGaF/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0;">
+                                <div style="padding:16px;">
+                                    <a href="https://www.instagram.com/p/DBrTHiHRGaF/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+
+                                    </a>
+                                </div>
+                            </blockquote>
+
+
+                    </div>
+                </div>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+
+
     </main>
 
 <footer class="h-screen bg-[#D9D9D9] flex flex-col items-center text-center justify-center p-10">
@@ -205,8 +231,11 @@
     </div>
 </div>  
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 </x-app-layout>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 
 <script>
   var splide = new Splide('.splide', {
