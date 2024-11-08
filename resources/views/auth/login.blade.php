@@ -14,7 +14,7 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+            <x-input-label for="password" :value="__('Senha')" />
 
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
@@ -25,23 +25,42 @@
         </div>
 
         <!-- Remember Me -->
-        <div class="block mt-4">
+        <div class="mt-4 flex justify-between items-center">
             <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
+                <input id="remember_me" type="checkbox" class="rounded dark:bg-white border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
                 <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
             </label>
-        </div>
 
-        <div class="flex items-center justify-end mt-4">
+            <div class="flex flex-col items-center justify-center gap-3">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
+                    {{ __('Esqueceu sua senha?') }}
+                </a>
+
+            @endif
+        </div>
+
+        </div>
+
+
+
+        <div class="flex items-center justify-center mt-16 gap-3">
+            @if (Route::has('register'))
+
+                <a
+                href="{{ route('register') }}"
+                class="rounded-md text-center px-3 py-2 w-32 h-10 text-black ring-1 transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:bg-[#C73A13] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-black"
+                >
+                Cadastre-se
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
+            
+            <x-primary-button class="w-32 h-10 justify-center">
+                {{ __('Login') }}
             </x-primary-button>
+
         </div>
+
     </form>
 </x-guest-layout>
