@@ -20,11 +20,11 @@
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-[#FF5900] dark:bg-gray-800 shadow">
-                        <div class="max-w-7xl flex justify-between mx-auto  text-center">
-                            <p class="text-lg font-semibold text-gray-800">Obtenha desconto por Pix</p>
-                            <p class="text-lg font-semibold text-gray-800">Parcelamos até 12x</p>
-                            <p class="text-lg font-semibold text-gray-800">Garanta seu sneakers!</p>
+                <header class="bg-[#FF5900] shadow">
+                        <div class="w-full px-4 flex justify-between mx-auto text-center">
+                            <p class="text-lg font-semibold dark:text-white text-gray-800">Obtenha desconto por Pix</p>
+                            <p class="text-lg font-semibold dark:text-white text-gray-800">Parcelamos até 12x</p>
+                            <p class="text-lg font-semibold dark:text-white text-gray-800">Garanta seu sneakers!</p>
                         </div>
                 </header>
             @endisset

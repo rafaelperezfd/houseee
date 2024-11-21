@@ -14,19 +14,23 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+
     <body class="font-sans text-gray-900 bg-black antialiased">
+    
         <div class="min-h-screen flex">
       
-            <div class="w-full md:w-1/2 flex justify-center items-center px-6 py-4">
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-center px-6">
+
+                <img src="{{asset('image/LOGO.png')}}" alt="">
                 
-                <div class="bg-white dark:bg-black shadow-md rounded-lg overflow-hidden w-full sm:max-w-md mt-40">
+                <div class="bg-white dark:bg-black shadow-md rounded-lg overflow-hidden w-full sm:max-w-md">
                     {{ $slot }}
                 </div>
             </div>
 
             
-            <div class="w-1/2 h-screen">
-                <video class="w-full h-full object-cover" autoplay loop muted>
+            <div class="w-1/2 h-screen  md:block hidden">
+                <video class="md:w-full md:h-full md:object-cover" autoplay loop muted>
                     <source src="{{ asset('video/loginvideo.mp4') }}" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
