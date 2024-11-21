@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-[#ff5900ce] dark:bg-[#ff5900ce] border-b border-gray-100 dark:border-gray-700">
+<nav x-data="{ open: false }" class="bg-[#ff5900ce] dark:bg-[#ff5900ce] my-4 rounded-3xl w-[98%] h-18 border-b border-gray-100 dark:border-gray-700">
        
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -6,11 +6,9 @@
             <div class="flex">
                 
                 
-                    <a href="{{ route('dashboard') }}" class=" bg-black flex justify-center items-center">
+                    <a href="{{ route('dashboard') }}" class=" flex justify-center items-center">
                         <img class=" w-32 h-32  object-contain" src="{{ asset('image/LOGO.png') }}" alt="Logo">
                     </a>
-
-              
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
@@ -30,7 +28,7 @@
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-white bg-[#ff590000] dark:bg-[#ff590000] hover:text-gray-700 dark:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ms-1">
@@ -42,6 +40,14 @@
                     </x-slot>
 
                     <x-slot name="content">
+                        <x-dropdown-link :href="route('profile.edit')">
+                            {{ __('Favoritos') }}
+                        </x-dropdown-link>
+
+                        <x-dropdown-link :href="route('profile.edit')">
+                            {{ __('Meus pedidos') }}
+                        </x-dropdown-link>
+
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Perfil') }}
                         </x-dropdown-link>
