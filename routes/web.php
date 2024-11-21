@@ -24,3 +24,7 @@ Route::get('/homeexample', function () {
     return view('homeexample');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/comprar', function () {
+    return view('comprar');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
