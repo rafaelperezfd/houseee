@@ -15,16 +15,26 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="bg-white dark:bg-black flex justify-center flex-col items-center">
+        <div class="bg-white dark:bg-gray-900 flex justify-center flex-col items-center">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
             @isset($header)
                 <header class="bg-[#FF5900] shadow w-full">
-                        <div class="w-full px-16 flex justify-between mx-auto text-center">
-                            <p class="text-lg font-semibold dark:text-white text-gray-800">Obtenha desconto por Pix</p>
-                            <p class="text-lg font-semibold dark:text-white text-gray-800">Parcelamos até 12x</p>
-                            <p class="text-lg font-semibold dark:text-white text-gray-800">Garanta seu sneakers!</p>
+                        <div class="w-full px-8 text-center">
+                            <marquee behavior="" scrolldelay="30" truespeed="30" hspace="0px" direction="left" class="flex h-6">
+                                <div class="flex gap-60">
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Obtenha desconto por Pix</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Parcelamos até 12x</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Garanta seu sneakers!</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Obtenha desconto por Pix</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Parcelamos até 12x</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Garanta seu sneakers!</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Obtenha desconto por Pix</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Parcelamos até 12x</p>
+                                    <p class="text-lg font-semibold dark:text-white text-gray-800 mr-48">Garanta seu sneakers!</p>
+                                </div>
+                            </marquee>
                         </div>
                 </header>
             @endisset

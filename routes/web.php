@@ -26,5 +26,5 @@ Route::get('/homeexample', function () {
 
 Route::get('/comprar', function () {
     return view('comprar');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->name('comprar');
 

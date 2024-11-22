@@ -1,17 +1,17 @@
-<nav x-data="{ open: false }" class="bg-[#ff5900ce] dark:bg-[#ff5900ce] my-4 rounded-3xl w-[98%] h-18 border-b border-gray-100 dark:border-gray-700">
+<nav x-data="{ open: false }" class="bg-[#ff5900ce] dark:bg-[#ff5900b0] my-4 rounded-3xl w-[98%] h-18 border-b border-gray-100 dark:border-gray-700">
        
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class=" w-full mx-auto md:py-2 px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
-            <div class="flex">
+            <div class="flex items-center justify-around w-2/3">
                 
                 
                     <a href="{{ route('dashboard') }}" class=" flex justify-center items-center">
-                        <img class=" w-32 h-32  object-contain" src="{{ asset('image/LOGO.png') }}" alt="Logo">
+                        <img class=" w-40 h-40  object-contain" src="{{ asset('image/LOGO.png') }}" alt="Logo">
                     </a>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex sm:text-lg">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Início') }}
                     </x-nav-link>
@@ -25,10 +25,12 @@
             </div>
 
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
+            <div class="hidden sm:flex sm:items-center sm:ms-6 gap-8">
+                <img src="{{asset('image/IconLupa.png')}}" alt="" class="w-7 h-7">
+                <img src="{{asset('image/Icon.png')}}" alt="" class="w-7 h-7">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-white bg-[#ff590000] dark:bg-[#ff590000] hover:text-gray-700 dark:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-lg leading-4 font-medium rounded-md text-gray-500 dark:text-white bg-[#ff590000] dark:bg-[#ff590000] hover:text-gray-700 dark:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                             <div>{{ Auth::user()->name }}</div>
 
                             <div class="ms-1">
@@ -41,15 +43,15 @@
 
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Favoritos') }}
+                        <i class="fa fa-star mr-2"></i>    {{ __('Favoritos') }}
                         </x-dropdown-link>
 
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Meus pedidos') }}
+                        <i class="fa-solid fa-truck mr-2"></i>    {{ __('Meus pedidos') }}
                         </x-dropdown-link>
 
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Perfil') }}
+                        <i class="fa fa-user mr-2"></i> {{ __('Perfil') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
@@ -59,7 +61,7 @@
                             <x-dropdown-link class="text-red-500" :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Sair da Conta') }}
+                            <i class="fa-solid fa-right-from-bracket mr-2"></i> {{ __('Sair da Conta') }}
                             </x-dropdown-link>
                         </form>
                     </x-slot>

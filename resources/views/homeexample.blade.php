@@ -10,11 +10,14 @@
 
 <img src="{{asset('image/imgbanner.png')}}" alt="" class="h-[680px] w-screen">
 
-        <h4 class="mt-8 mb-4 text-xl font-semibold dark:text-white">Novidades disponíveis</h4>
+        <div class="flex flex-col gap-3 items-center justify-center h-32 w-full mb-8">
+            <h4 class="text-4xl font-semibold dark:text-white">Novidades disponíveis</h4>
+            <div class="h-1 w-36 bg-[#ff5900ce]"></div>
+        </div>
 
-<div class="flex mb-8 gap-24" id="product-list">
-    <!-- Primeiros 3 produtos -->
-    <a href="" class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+<div class="flex md:justify-center flex-col md:flex-row gap-y-8 md:mb-6 md:gap-16 sm:flex-wrap md:w-full transition-all" id="product-list">
+    <!-- Primeiros 5 produtos -->
+    <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
         <div class="relative">
             <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/puma 180 1.png') }}" alt="">
             <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/pumapretosegunda.png') }}" alt="Tênis Puma 180 Hover">
@@ -27,7 +30,7 @@
         </div>
     </a>
 
-    <a href="" class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+    <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
         <div class="relative">
             <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/j4 verde 1.png') }}" alt="">
             <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemtenisverde.webp') }}" alt="Tênis Air Jordan Hover">
@@ -40,7 +43,33 @@
         </div>
     </a>
 
-    <a href="" class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+    <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <div class="relative">
+            <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/strange love 1.png') }}" alt="Tênis Nike Dunk Low">
+            <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemstrawberry.webp') }}" alt="Tênis Nike Dunk Low Hover">
+        </div>
+        <div class="p-4 text-center">
+            <h3 class="text-md font-semibold text-gray-800">Tênis Nike Dunk Low</h3>
+            <p class="text-sm text-gray-600">Strange Love</p>
+            <p class="text-lg font-bold text-gray-800 mt-2">R$ 1.099,90</p>
+            <p class="text-sm text-gray-500">ou 6x de R$ 183,32</p>
+        </div>
+    </a>
+
+    <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <div class="relative">
+            <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/strange love 1.png') }}" alt="Tênis Nike Dunk Low">
+            <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemstrawberry.webp') }}" alt="Tênis Nike Dunk Low Hover">
+        </div>
+        <div class="p-4 text-center">
+            <h3 class="text-md font-semibold text-gray-800">Tênis Nike Dunk Low</h3>
+            <p class="text-sm text-gray-600">Strange Love</p>
+            <p class="text-lg font-bold text-gray-800 mt-2">R$ 1.099,90</p>
+            <p class="text-sm text-gray-500">ou 6x de R$ 183,32</p>
+        </div>
+    </a>
+
+    <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
         <div class="relative">
             <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/strange love 1.png') }}" alt="Tênis Nike Dunk Low">
             <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemstrawberry.webp') }}" alt="Tênis Nike Dunk Low Hover">
@@ -57,9 +86,9 @@
 <!-- Produtos adicionais, inicialmente ocultos -->
 <div id="additional-products" class="hidden">
     
-    <div class="flex mb-8 gap-24" id="product-list">
+    <div class="flex md:justify-center mt-8 flex-col md:flex-row gap-y-8 md:mb-6 md:gap-16 sm:flex-wrap md:w-full transition-all" id="product-list">
         <!-- Primeiros 3 produtos -->
-        <a href="" class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
             <div class="relative">
                 <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/puma 180 1.png') }}" alt="">
                 <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/pumapretosegunda.png') }}" alt="Tênis Puma 180 Hover">
@@ -72,7 +101,7 @@
             </div>
         </a>
     
-        <a href="" class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
             <div class="relative">
                 <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/j4 verde 1.png') }}" alt="">
                 <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemtenisverde.webp') }}" alt="Tênis Air Jordan Hover">
@@ -85,7 +114,7 @@
             </div>
         </a>
     
-        <a href="" class="w-full max-w-xs mx-auto rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
             <div class="relative">
                 <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/strange love 1.png') }}" alt="Tênis Nike Dunk Low">
                 <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemstrawberry.webp') }}" alt="Tênis Nike Dunk Low Hover">
@@ -97,23 +126,53 @@
                 <p class="text-sm text-gray-500">ou 6x de R$ 183,32</p>
             </div>
         </a>
+
+        <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <div class="relative">
+            <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/strange love 1.png') }}" alt="Tênis Nike Dunk Low">
+            <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemstrawberry.webp') }}" alt="Tênis Nike Dunk Low Hover">
+        </div>
+        <div class="p-4 text-center">
+            <h3 class="text-md font-semibold text-gray-800">Tênis Nike Dunk Low</h3>
+            <p class="text-sm text-gray-600">Strange Love</p>
+            <p class="text-lg font-bold text-gray-800 mt-2">R$ 1.099,90</p>
+            <p class="text-sm text-gray-500">ou 6x de R$ 183,32</p>
+        </div>
+    </a>
+    
+    <a href="" class="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition-shadow duration-300 ease-in-out">
+        <div class="relative">
+            <img class="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0" src="{{ asset('image/strange love 1.png') }}" alt="Tênis Nike Dunk Low">
+            <img class="object-cover w-full h-64 absolute top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100" src="{{ asset('image/segundaimagemstrawberry.webp') }}" alt="Tênis Nike Dunk Low Hover">
+        </div>
+        <div class="p-4 text-center">
+            <h3 class="text-md font-semibold text-gray-800">Tênis Nike Dunk Low</h3>
+            <p class="text-sm text-gray-600">Strange Love</p>
+            <p class="text-lg font-bold text-gray-800 mt-2">R$ 1.099,90</p>
+            <p class="text-sm text-gray-500">ou 6x de R$ 183,32</p>
+        </div>
+    </a>
+
     </div>
 </div>
 
 <!-- Botões "Ver Mais" e "Ver Menos" -->
 <div class="mt-8 text-center">
     <button id="load-more" class="text-xl font-semibold cursor-pointer text-black dark:text-white hover:underline">Ver mais</button>
-    <button id="load-less" class="text-xl font-semibold cursor-pointer text-black dark:text-white hover:underline hidden mt-4">Ver menos</button>
+    <button id="load-less" class="text-xl font-semibold cursor-pointer text-black dark:text-white hover:underline hidden">Ver menos</button>
 </div>
        
 
-        <h4 class="mt-8 mb-4 text-xl font-semibold dark:text-white">Seus sonhos caminham com você!</h4>
+        <div class="flex flex-col gap-3 justify-center items-center w-full h-14 my-12">
+            <h4 class="text-4xl font-semibold dark:text-white">Seus sonhos caminham com você!</h4>
+            <div class="h-1 w-48 bg-[#ff5900ce]"></div>
+        </div>
     
-    <div class="bg-gray-100 py-10 px-5">
+    <div class=" py-10 px-5">
                 
         <div class="text-center mb-10">
-            <h1 class="text-3xl font-bold text-gray-800">Guia de Tênis: Escolha o Estilo Certo para Cada Ocasião</h1>
-            <p class="mt-3 text-gray-600">Descubra os tênis ideais para diversas ocasiões, desde eventos casuais até atividades ao ar livre.</p>
+            <h1 class="text-3xl font-bold text-white">Guia de Tênis: Escolha o Estilo Certo para Cada Ocasião</h1>
+            <p class="mt-3 text-gray-300">Descubra os tênis ideais para diversas ocasiões, desde eventos casuais até atividades ao ar livre.</p>
         </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
