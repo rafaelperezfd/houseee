@@ -38,7 +38,7 @@
         <!-- Actions -->
         <div class="flex items-center justify-end mt-12 gap-4">
 
-            <a class="text-xs uppercase tracking-widest text-gray-600 dark:text-black hover:text-gray-900 dark:hover:text-gray-800 dark:bg-white px-1 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('register') }}">
+            <a class="text-xs uppercase tracking-widest text-gray-800 dark:text-black hover:text-gray-900 dark:hover:text-gray-800 dark:bg-white px-1 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('register') }}">
                 {{ __('Cadastre-se') }}
             </a>
 
